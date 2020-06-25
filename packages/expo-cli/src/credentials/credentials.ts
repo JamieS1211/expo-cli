@@ -2,6 +2,12 @@ import { AndroidCredentials as Android } from '@expo/xdl';
 import { CredentialSchema } from './actions/promptForCredentials';
 import * as appleApi from '../appleApi';
 
+export enum CredentialsSource {
+  LOCAL = 'local',
+  REMOTE = 'remote',
+  AUTO = 'auto',
+}
+
 //
 // iOS
 //
